@@ -1,0 +1,95 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/media/fonts/sharp/GeogrotesqueSharpTRIAL-ExpUltLtIt-BF63ed824d3f50f.ttf
+    );
+}   
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add an overlay with transparency */
+}
+
+.content {
+   /* background-color: transparent; */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    align-items:flex-start;
+    left: 0;
+    right: 0;
+    top: 35%;
+    font-family: myFirstFont;
+}
+
+.content-header {
+    width: 45%;
+}
+
+.content-header span {
+    font-weight: bolder;
+}
+
+.content-header p, .content-header h1 {
+    text-align: left;
+}
+
+.navigation {    
+    /* border: solid 1px white; */
+    display: flex;
+    padding: 0;
+    justify-content:space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; /* Ensure the navbar is above the video */
+}
+
+.navbar-brand img {
+    /* border: solid 1px white; */
+    
+}
+
+.navbar-links {
+    width: 1100px;
+    color: white;
+    align-items: center;
+    display: flex;
+    align-content: center;
+
+}
+.link {
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+}
