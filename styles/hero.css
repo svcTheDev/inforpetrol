@@ -97,6 +97,10 @@ video {
     font-family: myFirstFont;
 }
 
+.banner h1 {
+  border-bottom: 1px solid white;
+}
+
 .postcard {
   flex-wrap: wrap;
   display: flex;
@@ -220,3 +224,15 @@ video {
   .blue::before {
     background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
   }
+
+  .service_card {
+    color: white;
+    background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+    box-shadow: 0 4px 21px -12px rgba(255, 251, 251, 0.66);
+  }
+
+  .services {
+    display: flex;
+  }
+
+  
