@@ -245,8 +245,9 @@ video {
  /* About us */
 
 .tabbed {
-  width: 100%;
-  margin: 30rem 0rem;
+  width: 50%;
+  max-width: 1320px;
+  margin: 10rem auto 20rem auto;
   color: white;
   background-color: #0074bd1a;
 }
@@ -273,9 +274,10 @@ video {
 }
 
 .tabs > div {
+  width: 50%;
   max-width: 1320px;
   position: absolute;
-  padding: 10px 30px 40px;
+  padding: 30px 30px 40px;
   line-height: 1.4em;
   opacity: 0;
   transform: rotateX(-20deg);
@@ -284,7 +286,8 @@ video {
   z-index: 0;
   /* background-color: #0074bd1a; */
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../media/about-bg.jpg");
+  box-shadow: 0 4px 21px -12px rgba(255, 251, 251, 0.66);
+  background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
 }
 
 #tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
